@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  if ("WebSocket" in window) {
+    var ws = new WebSocket("ws://localhost:8001/websocket/post", 'post');
+
+    ws.onopen = function() {
+      ws.send("Hello World!");
+      console.log("Message is sent...");
+    };
+
+    ws.onmessage = function (event) { 
+      var msg = event.data;
+      console.log("Received: " + msg);
+    };
+
+    ws.onclose = function() { 
+      console.log("Connection is closed..."); 
+    };
+  }
+  else {
+    console.log("WebSocket NOT supported by your Browser!");
+  }
+</script>

@@ -1,0 +1,588 @@
+2015-01-24 21:19:03.141 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 21:19:03.153 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 21:19:03.184 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 21:19:03.203 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 21:19:03.246 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 21:19:03.258 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 21:19:03.324 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 21:19:03.341 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 21:19:03.378 [info] <0.95.0> SSL:[]
+
+2015-01-24 21:19:03.389 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 21:19:03.396 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 21:19:03.403 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 21:19:03.422 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 21:19:03.422 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 21:19:03.500 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 21:19:03.518 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:19:03.564 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:19:03.583 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:19:03.608 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:19:03.610 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 21:19:03.669 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 21:19:09.446 [notice] <0.272.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath ws_post
+2015-01-24 21:19:09.449 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 21:19:09.449 [info] <0.262.0> Loading routes from "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/ws_post.routes" ....
+2015-01-24 21:19:09.454 [error] <0.272.0> GET /comments/index [ws_post] 404 0ms
+2015-01-24 21:19:12.215 [notice] <0.273.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath ws_post
+2015-01-24 21:19:12.216 [info] <0.262.0> Loading routes from "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/ws_post.routes" ....
+2015-01-24 21:19:12.218 [error] <0.273.0> GET / [ws_post] 404 0ms
+2015-01-24 21:19:14.573 [notice] <0.275.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath ws_post
+2015-01-24 21:19:14.574 [info] <0.262.0> Loading routes from "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/ws_post.routes" ....
+2015-01-24 21:19:14.578 [error] <0.275.0> GET / [ws_post] 404 0ms
+2015-01-24 21:24:35.336 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 21:24:39.841 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 21:24:39.853 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 21:24:39.874 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 21:24:39.942 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 21:24:39.943 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 21:24:39.955 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 21:24:40.008 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 21:24:40.023 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 21:24:40.056 [info] <0.95.0> SSL:[]
+
+2015-01-24 21:24:40.059 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 21:24:40.063 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 21:24:40.076 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 21:24:40.089 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 21:24:40.089 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 21:24:40.169 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 21:24:40.187 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:24:40.224 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:24:40.243 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:24:40.257 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:24:40.277 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:24:40.279 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 21:24:40.357 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 21:34:16.520 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 21:34:16.520 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 21:34:21.104 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 21:34:21.117 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 21:34:21.137 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 21:34:21.195 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 21:34:21.200 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 21:34:21.220 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 21:34:21.284 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 21:34:21.304 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 21:34:21.363 [info] <0.95.0> SSL:[]
+
+2015-01-24 21:34:21.368 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 21:34:21.372 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 21:34:21.383 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 21:34:21.404 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 21:34:21.404 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 21:34:21.503 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 21:34:21.520 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:34:21.562 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:34:21.584 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:34:21.599 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:34:21.612 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:34:21.614 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 21:34:21.713 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 21:36:46.595 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 21:36:46.595 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 21:36:51.746 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 21:36:51.757 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 21:36:51.781 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 21:36:51.843 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 21:36:51.850 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 21:36:51.859 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 21:36:51.920 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 21:36:51.935 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 21:36:51.970 [info] <0.95.0> SSL:[]
+
+2015-01-24 21:36:51.973 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 21:36:51.977 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 21:36:51.990 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 21:36:52.004 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 21:36:52.004 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 21:36:52.085 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 21:36:52.102 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:36:52.147 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:36:52.161 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:36:52.180 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:36:52.194 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:36:52.196 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 21:36:52.313 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 21:43:45.998 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 21:43:45.999 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 21:43:51.784 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 21:43:51.793 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 21:43:51.815 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 21:43:51.839 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 21:43:51.917 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 21:43:51.934 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 21:43:52.025 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 21:43:52.087 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 21:43:52.138 [info] <0.95.0> SSL:[]
+
+2015-01-24 21:43:52.143 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 21:43:52.149 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 21:43:52.168 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 21:43:52.194 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 21:43:52.194 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 21:43:52.288 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 21:43:52.311 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:43:52.368 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:43:52.388 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:43:52.410 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:43:52.429 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:43:52.434 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 21:43:52.547 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 21:45:20.707 [warning] <0.6.0> lager_error_logger_h dropped 31 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 21:45:20.708 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 21:45:25.785 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 21:45:25.805 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 21:45:25.824 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 21:45:25.872 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 21:45:25.890 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 21:45:25.891 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 21:45:25.949 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 21:45:25.971 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 21:45:26.006 [info] <0.95.0> SSL:[]
+
+2015-01-24 21:45:26.017 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 21:45:26.022 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 21:45:26.027 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 21:45:26.043 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 21:45:26.043 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 21:45:26.124 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 21:45:26.140 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:45:26.191 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:45:26.206 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:45:26.222 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:45:26.239 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 21:45:26.241 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 21:45:26.336 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 22:20:08.667 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:20:08.668 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 22:20:14.083 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 22:20:14.095 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 22:20:14.118 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 22:20:14.173 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 22:20:14.190 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:20:14.212 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 22:20:14.250 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:20:14.265 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 22:20:14.298 [info] <0.95.0> SSL:[]
+
+2015-01-24 22:20:14.310 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:20:14.315 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 22:20:14.320 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 22:20:14.338 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 22:20:14.339 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:20:14.424 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:20:14.440 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:20:14.486 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:20:14.501 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:20:14.517 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:20:14.534 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:20:14.536 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:20:14.650 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 22:24:30.524 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:24:30.525 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 22:24:35.060 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 22:24:35.072 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 22:24:35.103 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 22:24:35.157 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 22:24:35.167 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:24:35.190 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 22:24:35.237 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:24:35.261 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 22:24:35.304 [info] <0.95.0> SSL:[]
+
+2015-01-24 22:24:35.318 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:24:35.327 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 22:24:35.332 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 22:24:35.352 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 22:24:35.352 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:24:35.432 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:24:35.456 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:35.470 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/websocket/ws_post_post_websocket.erl" -> [{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]
+2015-01-24 22:24:35.470 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error websocket_modules : [[{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]]
+2015-01-24 22:24:35.615 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:35.652 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:35.669 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:35.683 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:35.685 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:24:35.834 [info] <0.273.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:24:35.859 [info] <0.273.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:24:35.878 [notice] <0.273.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:35.879 [error] <0.273.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/websocket/ws_post_post_websocket.erl" -> [{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]
+2015-01-24 22:24:35.879 [error] <0.273.0>@boss_load:make_all_modules:88 Load Module Error websocket_modules : [[{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]]
+2015-01-24 22:24:35.880 [info] <0.273.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:24:36.016 [warning] <0.6.0> lager_error_logger_h dropped 94 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:24:36.018 [error] <0.426.0> ** Boss Service Handler ws_post_post_websocket terminating in init/0
+   for the reason error:undef
+** Stacktrace: [{ws_post_post_websocket,module_info,[exports],[]},{boss_service_worker,apply_function_with_default,4,[{file,"src/boss/boss_service_worker.erl"},{line,292}]},{boss_service_worker,init,1,[{file,"src/boss/boss_service_worker.erl"},{line,79}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]
+
+
+2015-01-24 22:24:36.018 [error] <0.426.0> CRASH REPORT Process <0.426.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:init_it/6 line 334
+2015-01-24 22:24:36.018 [error] <0.273.0> gen_server boss_web terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.019 [error] <0.273.0> CRASH REPORT Process boss_web with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.019 [error] <0.315.0> gen_server boss_service_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.019 [error] <0.94.0> Supervisor boss_sup had child boss_web_controller started with boss_web_controller:start_link([{ip,"0.0.0.0"},{port,8001}]) at <0.273.0> exit with reason no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in context child_terminated
+2015-01-24 22:24:36.019 [error] <0.315.0> CRASH REPORT Process <0.315.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.020 [error] <0.313.0> gen_server boss_mail_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.020 [error] <0.313.0> CRASH REPORT Process boss_mail_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.020 [error] <0.309.0> gen_server boss_mq_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.020 [error] <0.309.0> CRASH REPORT Process <0.309.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.020 [error] <0.284.0> gen_server boss_session_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.020 [error] <0.284.0> CRASH REPORT Process <0.284.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.021 [error] <0.274.0> gen_server boss_db_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.021 [error] <0.274.0> CRASH REPORT Process <0.274.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.021 [error] <0.276.0> gen_server boss_db_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.021 [error] <0.311.0> gen_server boss_news_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.021 [error] <0.311.0> CRASH REPORT Process <0.311.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.021 [error] <0.276.0> CRASH REPORT Process boss_db_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.021 [error] <0.288.0> Supervisor {<0.288.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 22:24:36.022 [error] <0.423.0> gen_server <0.423.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.022 [error] <0.423.0> CRASH REPORT Process <0.423.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.022 [error] <0.420.0> gen_server <0.420.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.022 [error] <0.420.0> CRASH REPORT Process <0.420.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.022 [error] <0.286.0> gen_server boss_session_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:36.022 [error] <0.286.0> CRASH REPORT Process boss_session_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:36.891 [info] <0.427.0> Starting Boss in development mode....
+
+2015-01-24 22:24:36.892 [info] <0.427.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:24:36.900 [info] <0.427.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:24:36.902 [info] <0.427.0> SSL:[]
+
+2015-01-24 22:24:36.902 [info] <0.427.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:24:36.902 [info] <0.427.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:24:37.724 [warning] <0.6.0> lager_error_logger_h dropped 45 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:24:37.724 [info] <0.575.0> Loading routes from "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/ws_post.routes" ....
+2015-01-24 22:24:37.725 [info] <0.427.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:24:37.836 [notice] <0.427.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:37.838 [error] <0.427.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/websocket/ws_post_post_websocket.erl" -> [{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]
+2015-01-24 22:24:37.838 [error] <0.427.0>@boss_load:make_all_modules:88 Load Module Error websocket_modules : [[{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]]
+2015-01-24 22:24:37.842 [info] <0.427.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:24:38.002 [error] <0.580.0> ** Boss Service Handler ws_post_post_websocket terminating in init/0
+   for the reason error:undef
+** Stacktrace: [{ws_post_post_websocket,module_info,[exports],[]},{boss_service_worker,apply_function_with_default,4,[{file,"src/boss/boss_service_worker.erl"},{line,292}]},{boss_service_worker,init,1,[{file,"src/boss/boss_service_worker.erl"},{line,79}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]
+
+
+2015-01-24 22:24:38.002 [error] <0.580.0> CRASH REPORT Process <0.580.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:init_it/6 line 334
+2015-01-24 22:24:38.003 [error] <0.427.0> gen_server boss_web terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.003 [error] <0.427.0> CRASH REPORT Process boss_web with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.004 [error] <0.94.0> Supervisor boss_sup had child boss_web_controller started with boss_web_controller:start_link([{ip,"0.0.0.0"},{port,8001}]) at <0.427.0> exit with reason no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in context child_terminated
+2015-01-24 22:24:38.004 [error] <0.463.0> gen_server boss_mq_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.004 [error] <0.463.0> CRASH REPORT Process <0.463.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.004 [error] <0.465.0> gen_server boss_news_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.004 [error] <0.465.0> CRASH REPORT Process <0.465.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.005 [error] <0.430.0> gen_server boss_db_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.005 [error] <0.430.0> CRASH REPORT Process boss_db_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.005 [error] <0.428.0> gen_server boss_db_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.005 [error] <0.428.0> CRASH REPORT Process <0.428.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.006 [error] <0.438.0> gen_server boss_session_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.006 [error] <0.438.0> CRASH REPORT Process <0.438.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.006 [error] <0.467.0> gen_server boss_mail_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.006 [error] <0.467.0> CRASH REPORT Process boss_mail_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.006 [error] <0.577.0> gen_server <0.577.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.007 [error] <0.577.0> CRASH REPORT Process <0.577.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.007 [error] <0.440.0> gen_server boss_session_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.007 [error] <0.440.0> CRASH REPORT Process boss_session_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.007 [error] <0.469.0> gen_server boss_service_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.008 [error] <0.469.0> CRASH REPORT Process <0.469.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.008 [error] <0.574.0> gen_server <0.574.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:38.008 [error] <0.574.0> CRASH REPORT Process <0.574.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:38.805 [info] <0.581.0> Starting Boss in development mode....
+
+2015-01-24 22:24:38.806 [info] <0.581.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:24:38.815 [info] <0.581.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:24:38.817 [info] <0.581.0> SSL:[]
+
+2015-01-24 22:24:38.817 [info] <0.581.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:24:38.817 [info] <0.581.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:24:39.728 [warning] <0.6.0> lager_error_logger_h dropped 44 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:24:39.728 [info] <0.729.0> Loading routes from "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/ws_post.routes" ....
+2015-01-24 22:24:39.729 [info] <0.581.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:24:39.778 [notice] <0.581.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:39.779 [error] <0.581.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/websocket/ws_post_post_websocket.erl" -> [{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]
+2015-01-24 22:24:39.779 [error] <0.581.0>@boss_load:make_all_modules:88 Load Module Error websocket_modules : [[{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]]
+2015-01-24 22:24:39.781 [info] <0.581.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:24:39.952 [error] <0.734.0> ** Boss Service Handler ws_post_post_websocket terminating in init/0
+   for the reason error:undef
+** Stacktrace: [{ws_post_post_websocket,module_info,[exports],[]},{boss_service_worker,apply_function_with_default,4,[{file,"src/boss/boss_service_worker.erl"},{line,292}]},{boss_service_worker,init,1,[{file,"src/boss/boss_service_worker.erl"},{line,79}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]
+
+
+2015-01-24 22:24:39.953 [error] <0.734.0> CRASH REPORT Process <0.734.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:init_it/6 line 334
+2015-01-24 22:24:39.954 [error] <0.581.0> gen_server boss_web terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.954 [error] <0.581.0> CRASH REPORT Process boss_web with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.955 [error] <0.94.0> Supervisor boss_sup had child boss_web_controller started with boss_web_controller:start_link([{ip,"0.0.0.0"},{port,8001}]) at <0.581.0> exit with reason no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in context child_terminated
+2015-01-24 22:24:39.955 [error] <0.623.0> gen_server boss_service_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.956 [error] <0.623.0> CRASH REPORT Process <0.623.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.956 [error] <0.728.0> gen_server <0.728.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.956 [error] <0.731.0> gen_server <0.731.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.957 [error] <0.728.0> CRASH REPORT Process <0.728.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.957 [error] <0.731.0> CRASH REPORT Process <0.731.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.957 [error] <0.621.0> gen_server boss_mail_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.958 [error] <0.621.0> CRASH REPORT Process boss_mail_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.958 [error] <0.617.0> gen_server boss_mq_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.958 [error] <0.617.0> CRASH REPORT Process <0.617.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.958 [error] <0.619.0> gen_server boss_news_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.959 [error] <0.619.0> CRASH REPORT Process <0.619.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.959 [error] <0.594.0> gen_server boss_session_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.959 [error] <0.594.0> CRASH REPORT Process boss_session_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.960 [error] <0.584.0> gen_server boss_db_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.960 [error] <0.584.0> CRASH REPORT Process boss_db_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.960 [error] <0.592.0> gen_server boss_session_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.961 [error] <0.582.0> gen_server boss_db_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:39.961 [error] <0.582.0> CRASH REPORT Process <0.582.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.961 [error] <0.592.0> CRASH REPORT Process <0.592.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:39.961 [error] <0.596.0> Supervisor {<0.596.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 22:24:40.877 [info] <0.735.0> Starting Boss in development mode....
+
+2015-01-24 22:24:40.877 [info] <0.735.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:24:40.881 [info] <0.735.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:24:40.883 [info] <0.735.0> SSL:[]
+
+2015-01-24 22:24:40.883 [info] <0.735.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:24:40.883 [info] <0.735.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:24:41.667 [warning] <0.6.0> lager_error_logger_h dropped 45 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:24:41.667 [info] <0.883.0> Loading routes from "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/ws_post.routes" ....
+2015-01-24 22:24:41.668 [info] <0.735.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:24:41.715 [notice] <0.735.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:41.715 [error] <0.735.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/websocket/ws_post_post_websocket.erl" -> [{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]
+2015-01-24 22:24:41.716 [error] <0.735.0>@boss_load:make_all_modules:88 Load Module Error websocket_modules : [[{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]]
+2015-01-24 22:24:41.717 [info] <0.735.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:24:41.868 [error] <0.888.0> ** Boss Service Handler ws_post_post_websocket terminating in init/0
+   for the reason error:undef
+** Stacktrace: [{ws_post_post_websocket,module_info,[exports],[]},{boss_service_worker,apply_function_with_default,4,[{file,"src/boss/boss_service_worker.erl"},{line,292}]},{boss_service_worker,init,1,[{file,"src/boss/boss_service_worker.erl"},{line,79}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]
+
+
+2015-01-24 22:24:41.868 [error] <0.888.0> CRASH REPORT Process <0.888.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:init_it/6 line 334
+2015-01-24 22:24:41.869 [error] <0.735.0> gen_server boss_web terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.869 [error] <0.735.0> CRASH REPORT Process boss_web with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.870 [error] <0.94.0> Supervisor boss_sup had child boss_web_controller started with boss_web_controller:start_link([{ip,"0.0.0.0"},{port,8001}]) at <0.735.0> exit with reason no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in context child_terminated
+2015-01-24 22:24:41.870 [error] <0.777.0> gen_server boss_service_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.870 [error] <0.777.0> CRASH REPORT Process <0.777.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.870 [error] <0.738.0> gen_server boss_db_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.870 [error] <0.738.0> CRASH REPORT Process boss_db_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.871 [error] <0.748.0> gen_server boss_session_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.871 [error] <0.748.0> CRASH REPORT Process boss_session_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.871 [error] <0.885.0> gen_server <0.885.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.871 [error] <0.736.0> gen_server boss_db_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.871 [error] <0.885.0> CRASH REPORT Process <0.885.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.872 [error] <0.882.0> gen_server <0.882.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.872 [error] <0.736.0> CRASH REPORT Process <0.736.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.872 [error] <0.882.0> CRASH REPORT Process <0.882.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.872 [error] <0.746.0> gen_server boss_session_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.872 [error] <0.746.0> CRASH REPORT Process <0.746.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.873 [error] <0.773.0> gen_server boss_news_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.873 [error] <0.750.0> Supervisor {<0.750.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 22:24:41.873 [error] <0.750.0> Supervisor {<0.750.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason noproc in context shutdown_error
+2015-01-24 22:24:41.873 [error] <0.773.0> CRASH REPORT Process <0.773.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.873 [error] <0.771.0> gen_server boss_mq_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.874 [error] <0.771.0> CRASH REPORT Process <0.771.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:41.874 [error] <0.775.0> gen_server boss_mail_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:41.874 [error] <0.775.0> CRASH REPORT Process boss_mail_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:42.732 [info] <0.889.0> Starting Boss in development mode....
+
+2015-01-24 22:24:42.732 [info] <0.889.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:24:43.723 [info] <0.889.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:24:43.726 [info] <0.889.0> SSL:[]
+
+2015-01-24 22:24:43.726 [info] <0.889.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:24:43.726 [info] <0.889.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:24:43.749 [info] <0.889.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:24:43.763 [notice] <0.889.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:43.763 [error] <0.889.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/websocket/ws_post_post_websocket.erl" -> [{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]
+2015-01-24 22:24:43.764 [error] <0.889.0>@boss_load:make_all_modules:88 Load Module Error websocket_modules : [[{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]]
+2015-01-24 22:24:43.765 [info] <0.889.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:24:43.935 [info] <0.1043.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:24:43.967 [info] <0.1043.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:24:43.982 [notice] <0.1043.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:24:43.983 [error] <0.1043.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/websocket/ws_post_post_websocket.erl" -> [{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]
+2015-01-24 22:24:43.983 [error] <0.1043.0>@boss_load:make_all_modules:88 Load Module Error websocket_modules : [[{"/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl",[{4,erl_parse,[98,97,100,32,"export",32,100,101,99,108,97,114,97,116,105,111,110]}]}]]
+2015-01-24 22:24:43.986 [info] <0.1043.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:24:44.128 [warning] <0.6.0> lager_error_logger_h dropped 97 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:24:44.129 [error] <0.1196.0> ** Boss Service Handler ws_post_post_websocket terminating in init/0
+   for the reason error:undef
+** Stacktrace: [{ws_post_post_websocket,module_info,[exports],[]},{boss_service_worker,apply_function_with_default,4,[{file,"src/boss/boss_service_worker.erl"},{line,292}]},{boss_service_worker,init,1,[{file,"src/boss/boss_service_worker.erl"},{line,79}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]
+
+
+2015-01-24 22:24:44.129 [error] <0.1196.0> CRASH REPORT Process <0.1196.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:init_it/6 line 334
+2015-01-24 22:24:44.131 [error] <0.1043.0> gen_server boss_web terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.131 [error] <0.1043.0> CRASH REPORT Process boss_web with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.131 [error] <0.94.0> Supervisor boss_sup had child boss_web_controller started with boss_web_controller:start_link([{ip,"0.0.0.0"},{port,8001}]) at <0.1043.0> exit with reason no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in context child_terminated
+2015-01-24 22:24:44.131 [error] <0.1046.0> gen_server boss_db_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.132 [error] <0.1046.0> CRASH REPORT Process boss_db_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.132 [error] <0.1056.0> gen_server boss_session_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.132 [error] <0.1056.0> CRASH REPORT Process boss_session_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.132 [error] <0.1054.0> gen_server boss_session_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.132 [error] <0.1193.0> gen_server <0.1193.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.133 [error] <0.1054.0> CRASH REPORT Process <0.1054.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.133 [error] <0.1193.0> CRASH REPORT Process <0.1193.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.133 [error] <0.1044.0> gen_server boss_db_mock_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.133 [error] <0.1044.0> CRASH REPORT Process <0.1044.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.133 [error] <0.1190.0> gen_server <0.1190.0> terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.133 [error] <0.1083.0> gen_server boss_mail_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.133 [error] <0.1190.0> CRASH REPORT Process <0.1190.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.134 [error] <0.1083.0> CRASH REPORT Process boss_mail_sup with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.134 [error] <0.1085.0> gen_server boss_service_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.134 [error] <0.1079.0> gen_server boss_mq_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.134 [error] <0.1085.0> CRASH REPORT Process <0.1085.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.134 [error] <0.1079.0> CRASH REPORT Process <0.1079.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:24:44.134 [error] <0.1081.0> gen_server boss_news_sup terminated with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65
+2015-01-24 22:24:44.135 [error] <0.1081.0> CRASH REPORT Process <0.1081.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,ok},{child,undefined,ws_post_post_websocket,{boss_service_worker,start_link,[ws_post_post_websocket,<<"/websocket/post">>]},permanent,5000,worker,[ws_post_post_websocket]}}} in boss_service_sup:'-start_services/2-fun-0-'/3 line 65 in gen_server:terminate/7 line 804
+2015-01-24 22:25:19.049 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 22:25:19.061 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 22:25:19.077 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 22:25:19.128 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 22:25:19.142 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:25:19.174 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 22:25:19.211 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:25:19.233 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 22:25:19.268 [info] <0.95.0> SSL:[]
+
+2015-01-24 22:25:19.272 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:25:19.277 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 22:25:19.292 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 22:25:19.306 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 22:25:19.306 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:25:19.375 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:25:19.400 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:25:19.451 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:25:19.468 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:25:19.485 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:25:19.501 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:25:19.503 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:25:19.613 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 22:25:54.625 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:25:54.625 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 22:26:03.722 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 22:26:03.734 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 22:26:03.760 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 22:26:03.820 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 22:26:03.833 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:26:03.845 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 22:26:03.890 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:26:03.907 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 22:26:03.943 [info] <0.95.0> SSL:[]
+
+2015-01-24 22:26:03.956 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:26:03.965 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 22:26:03.970 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 22:26:03.991 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 22:26:03.991 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:26:04.065 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:26:04.082 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:26:04.132 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:26:04.147 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:26:04.170 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:26:04.189 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:26:04.193 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:26:04.303 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 22:28:09.264 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 22:28:09.265 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 22:28:14.361 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 22:28:14.373 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 22:28:14.389 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 22:28:14.443 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 22:28:14.454 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 22:28:14.480 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 22:28:14.517 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 22:28:14.532 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 22:28:14.570 [info] <0.95.0> SSL:[]
+
+2015-01-24 22:28:14.573 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 22:28:14.578 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 22:28:14.589 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 22:28:14.609 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 22:28:14.609 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 22:28:14.680 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 22:28:14.696 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:28:14.742 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:28:14.757 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:28:14.775 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:28:14.792 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 22:28:14.794 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 22:28:14.900 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 23:00:42.976 [warning] <0.6.0> lager_error_logger_h dropped 33 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 23:00:42.977 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2015-01-24 23:09:35.210 [info] <0.7.0> Application lager started on node ws_post@bunlong
+2015-01-24 23:09:35.222 [info] <0.7.0> Application crypto started on node ws_post@bunlong
+2015-01-24 23:09:35.239 [info] <0.7.0> Application mimetypes started on node ws_post@bunlong
+2015-01-24 23:09:35.300 [info] <0.95.0> Starting Boss in development mode....
+
+2015-01-24 23:09:35.315 [info] <0.95.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-01-24 23:09:35.345 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-01-24 23:09:35.383 [info] <0.95.0> Starting master services on ws_post@bunlong
+
+2015-01-24 23:09:35.414 [info] <0.7.0> Application tinymq started on node ws_post@bunlong
+2015-01-24 23:09:35.453 [info] <0.95.0> SSL:[]
+
+2015-01-24 23:09:35.465 [info] <0.95.0> Starting cowboy... on ws_post@bunlong
+
+2015-01-24 23:09:35.470 [info] <0.7.0> Application cowlib started on node ws_post@bunlong
+2015-01-24 23:09:35.478 [info] <0.7.0> Application ranch started on node ws_post@bunlong
+2015-01-24 23:09:35.497 [info] <0.7.0> Application cowboy started on node ws_post@bunlong
+2015-01-24 23:09:35.497 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-01-24 23:09:35.578 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application ws_post
+2015-01-24 23:09:35.596 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/websocket/ws_post_post_websocket.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 23:09:35.650 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 23:09:35.668 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/mail/ws_post_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 23:09:35.713 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/tag_modules/ws_post_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 23:09:35.751 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/src/view/lib/filter_modules/ws_post_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-01-24 23:09:35.753 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  ws_post_view_lib_tags
+2015-01-24 23:09:35.902 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/priv/init/ws_post_01_news.erl" with options [{include_dirs,["/home/bunlong/workspace/my_project/geekhmerlab/chicagoboss/ws_post/include"]}] 
+2015-01-24 23:11:36.817 [warning] <0.6.0> lager_error_logger_h dropped 34 messages in the last second that exceeded the limit of 50 messages/sec
+2015-01-24 23:11:36.817 [error] <0.110.0> Supervisor {<0.110.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
