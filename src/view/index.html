@@ -1,19 +1,20 @@
 <script type="text/javascript">
-  if ("WebSocket" in window) {
-    var ws = new WebSocket("ws://localhost:8001/websocket/post", 'post');
+  if("WebSocket" in window) {
+    var ws = new WebSocket("ws://localhost:8001/websocket/post");
 
     ws.onopen = function() {
-      ws.send("Hello World!");
-      console.log("Message is sent...");
+      var msg = "Hello World Chicagoboss!";
+      ws.send(msg);
+      console.log("Sent: " + msg);
     };
 
-    ws.onmessage = function (event) { 
+    ws.onmessage = function (event) {
       var msg = event.data;
       console.log("Received: " + msg);
     };
 
-    ws.onclose = function() { 
-      console.log("Connection is closed..."); 
+    ws.onclose = function() {
+      console.log("Connection is closed...");
     };
   }
   else {

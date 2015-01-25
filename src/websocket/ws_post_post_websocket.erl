@@ -1,8 +1,5 @@
 -module(ws_post_post_websocket, [Req, SessionId]).
--behaviour(boss_service_handler).
-
--export([init/0, handle_join/3, handle_incoming/4, handle_broadcast/2, handle_close/4,
-  terminate/2]).
+-compile(export_all).
 
 init() ->
   {ok, []}.
